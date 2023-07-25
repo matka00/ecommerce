@@ -10,4 +10,14 @@
 .products-heading p {
   font-size: 16px;
   font-weight: 200;
+  color: #324d67;
+}
+
+.products-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }

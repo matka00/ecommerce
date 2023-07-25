@@ -3,6 +3,7 @@ import "./Home.css";
 
 import { client } from "../../library/client";
 import HeroBanner from "../HeroBanner/HeroBanner";
+import ProductCard from "../products/ProductCard";
 
 function Home() {
   const [products, setProducts] = useState(null);
@@ -58,7 +59,10 @@ function Home() {
       </div>
 
       <div className="products-container">
-        {products && products.map((product) => product.name)}
+        {products &&
+          products.map((product) => (
+            <ProductCard key={product._id} product={product} />
+          ))}
       </div>
     </>
   );
