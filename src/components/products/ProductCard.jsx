@@ -5,7 +5,8 @@ import { urlFor } from "../../library/client";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-  console.log(product);
+  /* console.log(product); */
+  
   return (
     <div>
       <Link to={`/product/${product.slug.current}`}>

@@ -1,0 +1,71 @@
+.footer-banner-cont {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-top: 120px;
+  padding: 100px 40px;
+  border-radius: 15px;
+  background-color: #ff6433;
+  color: white;
+}
+
+.footer-banner-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-banner-desc .left {
+  width: 50%;
+  height: 100%;
+}
+
+.footer-banner-desc .left h3 {
+  margin-left: 25px;
+  font-weight: 900;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.footer-banner-desc .left p {
+  margin: 18px;
+}
+
+.footer-banner-desc .right {
+  height: 100%;
+  line-height: 1.4;
+}
+
+.footer-banner-desc .right h3 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.footer-banner-desc .right p {
+  font-size: 18px;
+}
+
+.footer-banner-desc .right .company-desc {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-banner-desc .right button {
+  margin-top: 40px;
+  padding: 10px 16px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: white;
+  color: #ff6433;
+  cursor: pointer;
+}
+
+.footer-banner-image {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: -10%;
+  left: 25%;
+}

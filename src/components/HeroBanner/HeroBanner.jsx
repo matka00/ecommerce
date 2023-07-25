@@ -16,7 +16,7 @@ function HeroBanner({ bannerProduct }) {
         <h1>{bannerProduct.largeText1}</h1>
         <img
           src={urlFor(bannerProduct.image)}
-          alt="plush"
+          alt={bannerProduct.product}
           className="hero-banner-image"
         />
       </div>

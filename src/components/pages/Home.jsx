@@ -4,6 +4,7 @@ import "./Home.css";
 import { client } from "../../library/client";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import ProductCard from "../products/ProductCard";
+import FooterBanner from "../Footer/FooterBanner";
 
 function Home() {
   const [products, setProducts] = useState(null);
@@ -49,6 +50,7 @@ function Home() {
   }, []);
 
   console.log(products);
+  console.log(bannerProduct);
 
   return (
     <>
@@ -64,6 +66,7 @@ function Home() {
             <ProductCard key={product._id} product={product} />
           ))}
       </div>
+      {bannerProduct && <FooterBanner footerBanner={bannerProduct[1]} />}
     </>
   );
 }
