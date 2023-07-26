@@ -2,54 +2,45 @@
   width: 100%;
   height: 400px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 120px;
-  padding: 100px 40px;
+  padding: 40px;
   border-radius: 15px;
   background-color: #ff6433;
   color: white;
 }
 
-.footer-banner-desc {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-banner-desc .left {
-  width: 50%;
-  height: 100%;
-}
-
-.footer-banner-desc .left h3 {
-  margin-left: 25px;
+.footer-banner-cont .footer-banner-left h3 {
+  width: 100%;
+  margin: 25px;
   font-weight: 900;
   font-size: 80px;
   text-transform: uppercase;
 }
 
-.footer-banner-desc .left p {
-  margin: 18px;
+.footer-banner-cont .footer-banner-left p {
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.footer-banner-desc .right {
-  height: 100%;
-  line-height: 1.4;
+.footer-banner-cont .footer-banner-image {
+  width: 350px;
+  height: 350px;
 }
 
-.footer-banner-desc .right h3 {
+.footer-banner-cont .footer-banner-right h3 {
+  margin: 25px 0;
   font-weight: 800;
   font-size: 60px;
 }
 
-.footer-banner-desc .right p {
+.footer-banner-cont .footer-banner-right p {
   font-size: 18px;
 }
 
-.footer-banner-desc .right .company-desc {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.footer-banner-desc .right button {
+.footer-banner-cont .footer-banner-right button {
   margin-top: 40px;
   padding: 10px 16px;
   border-radius: 15px;
@@ -62,10 +53,62 @@
   cursor: pointer;
 }
 
-.footer-banner-image {
-  width: 350px;
-  height: 350px;
-  position: absolute;
-  top: -10%;
-  left: 25%;
+@media (max-width: 900px) {
+  .footer-banner-cont {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+  }
+
+  .footer-banner-cont .footer-banner-left {
+    width: 100%;
+  }
+
+  .footer-banner-cont .footer-banner-left h3 {
+    text-align: end;
+    padding-right: 40px;
+  }
+
+  .footer-banner-cont .footer-banner-left p {
+    font-size: 20px;
+  }
+
+  .footer-banner-cont .footer-banner-image {
+    width: 300px;
+    height: 300px;
+    align-self: flex-end;
+    margin: 20px 0;
+  }
+
+  .footer-banner-cont .footer-banner-right p {
+    font-size: 20px;
+  }
+
+  .footer-banner-cont .footer-banner-right button {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-banner-cont {
+    padding-bottom: 120px;
+  }
+
+  .footer-banner-cont .footer-banner-left h3 {
+    font-size: 60px;
+  }
+
+  .footer-banner-cont .footer-banner-image {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .footer-banner-cont .footer-banner-right h3 {
+    text-align: end;
+    font-size: 40px;
+  }
 }
