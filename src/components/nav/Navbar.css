@@ -1,0 +1,38 @@
+.navbar-cont {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 18px;
+}
+
+.navbar-cont .navbar-logo {
+  font-size: 18px;
+  color: gray;
+}
+
+.navbar-cont .cart-icon {
+  position: relative;
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+  color: gray;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.navbar-cont .cart-icon:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.navbar-cont .cart-item-qty {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #ff6433;
+  color: #fff;
+}
