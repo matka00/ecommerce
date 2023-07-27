@@ -1,11 +1,12 @@
 .footer-banner-cont {
   width: 100%;
+  max-width: 1000px;
   height: 400px;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
+  margin: 120px auto 0;
   padding: 40px;
   border-radius: 15px;
   background-color: #ff6433;

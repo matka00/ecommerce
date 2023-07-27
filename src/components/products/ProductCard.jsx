@@ -8,7 +8,7 @@ function ProductCard({ product }) {
   /* console.log(product); */
   
   return (
-    <div>
+    <>
       <Link to={`/product/${product.slug.current}`}>
         <div className="product-card">
           <div className="product-image-cont">
@@ -22,7 +22,7 @@ function ProductCard({ product }) {
           <p className="product-price">{product.price} €</p>
         </div>
       </Link>
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,15 @@
+.layout {
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .layout {
+    padding: 0;
+  }
+}
