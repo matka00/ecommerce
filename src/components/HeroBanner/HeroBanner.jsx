@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { urlFor } from "../../library/client";
 
 function HeroBanner({ bannerProduct }) {
-  console.log(bannerProduct);
+  /*   console.log(bannerProduct);
   console.log(bannerProduct.image);
-
+ */
   return (
     <>
       <div className="hero-banner-cont">

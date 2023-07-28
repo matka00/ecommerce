@@ -5,11 +5,9 @@ import { urlFor } from "../../library/client";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-  /* console.log(product); */
-  
   return (
     <>
-      <Link to={`/product/${product.slug.current}`}>
+      <Link to={`/products/${product.slug.current}`}>
         <div className="product-card">
           <div className="product-image-cont">
             <img

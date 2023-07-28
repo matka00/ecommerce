@@ -5,7 +5,7 @@ import { urlFor } from "../../library/client";
 import { Link } from "react-router-dom";
 
 function FooterBanner({ footerBanner }) {
-  console.log(footerBanner);
+  /*  console.log(footerBanner); */
   return (
     <>
       <div className="footer-banner-cont">

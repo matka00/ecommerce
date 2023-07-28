@@ -1,57 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.css";
 
-import { client } from "../../library/client";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import ProductCard from "../products/ProductCard";
 import FooterBanner from "../Footer/FooterBanner";
 
-function Home() {
-  const [products, setProducts] = useState(null);
-  const [bannerProduct, setBannerProduct] = useState(null);
-
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "product"]{
-          name,
-          slug,
-          price,
-          details,
-          "image": image[]{
-            "url": asset->url,
-          },
-          hexCode,
-        }`
-      )
-      .then((data) => setProducts(data))
-      .catch(console.error);
-  }, []);
-
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "banner"]{
-          buttonText,
-          product,
-          description,
-          smallText,
-          midText,
-          largeText1,
-          largeText2,
-          discount,
-          saleTime,
-          image,
-          hexCode,
-        }`
-      )
-      .then((data) => setBannerProduct(data))
-      .catch(console.error);
-  }, []);
-
-  console.log(products);
-  console.log(bannerProduct);
-
+function Home({ products, bannerProduct }) {
   return (
     <>
       {bannerProduct && <HeroBanner bannerProduct={bannerProduct[0]} />}
@@ -63,7 +17,7 @@ function Home() {
       <div className="products-container">
         {products &&
           products.map((product) => (
-            <ProductCard key={product._id} product={product} />
+            <ProductCard key={product.name + product.slug} product={product} />
           ))}
       </div>
       {bannerProduct && <FooterBanner footerBanner={bannerProduct[1]} />}

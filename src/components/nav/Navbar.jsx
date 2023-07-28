@@ -10,7 +10,7 @@ function Navbar() {
         <Link to="/" className="navbar-logo">
           Handmade Shop
         </Link>
-        <button type="button" onClick="" className="cart-icon">
+        <button type="button" className="cart-icon">
           <AiOutlineShopping />
           <span className="cart-item-qty">1</span>
         </button>
