@@ -107,7 +107,7 @@ function ProductDetails() {
               </div>
               <h4>Details:</h4>
               <p>{thisProduct.details}</p>
-              <p className="price">{thisProduct.price}€</p>
+              <p className="price">{thisProduct.price} €</p>
               <div className="quantity">
                 <h3>Quantity:</h3>
                 <p className="quantity-desc">
