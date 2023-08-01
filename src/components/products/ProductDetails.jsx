@@ -29,11 +29,16 @@ function ProductDetails() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "product" && slug.current == '${slug}'][0]{
+        `*[_type == "products" && slug.current == '${slug}'][0]{
           name,
           slug,
+          species,
           price,
+          description,
           details,
+          materials,
+          size,
+          treatment,
           "image": image[]{
             "url": asset->url,
           },
@@ -47,7 +52,7 @@ function ProductDetails() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "product" && slug.current != '${slug}']{
+        `*[_type == "products" && slug.current != '${slug}']{
           name,
           slug,
           price,
@@ -105,8 +110,7 @@ function ProductDetails() {
                 </div>
                 <p>{"(20)"}</p>
               </div>
-              <h4>Details:</h4>
-              <p>{thisProduct.details}</p>
+              <p>{thisProduct.description}</p>
               <p className="price">{thisProduct.price} €</p>
               <div className="quantity">
                 <h3>Quantity:</h3>
@@ -131,6 +135,19 @@ function ProductDetails() {
                 <button type="button" className="buy-now">
                   Buy Now
                 </button>
+              </div>
+              <div className="other-details">
+                <h4>Details:</h4>
+                <p className="details-text">{thisProduct.details}</p>
+                <p>
+                  <mark>Materials:</mark> {thisProduct.materials}
+                </p>
+                <p>
+                  <mark>Size:</mark> {thisProduct.size}
+                </p>
+                <p>
+                  <mark>Treatment:</mark> {thisProduct.treatment}
+                </p>
               </div>
             </div>
           </div>

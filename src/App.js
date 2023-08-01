@@ -14,11 +14,16 @@ function App() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "product"]{
+        `*[_type == "products"]{
           name,
           slug,
+          species,
           price,
+          description,
           details,
+          materials,
+          size,
+          treatment,
           "image": image[]{
             "url": asset->url,
           },
