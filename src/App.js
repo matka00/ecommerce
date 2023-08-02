@@ -9,7 +9,6 @@ import { StateContext } from "./context/StateContext";
 
 function App() {
   const [products, setProducts] = useState(null);
-  const [bannerProduct, setBannerProduct] = useState(null);
 
   useEffect(() => {
     client
@@ -34,27 +33,6 @@ function App() {
       .catch(console.error);
   }, []);
 
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "banner"]{
-          buttonText,
-          product,
-          description,
-          smallText,
-          midText,
-          largeText1,
-          largeText2,
-          discount,
-          saleTime,
-          image,
-          hexCode,
-        }`
-      )
-      .then((data) => setBannerProduct(data))
-      .catch(console.error);
-  }, []);
-
   return (
     <>
       <BrowserRouter>
@@ -62,13 +40,7 @@ function App() {
           <Layout>
             <Toaster />
             <Routes>
-              <Route
-                path="/"
-                exact
-                element={
-                  <Home products={products} bannerProduct={bannerProduct} />
-                }
-              />
+              <Route path="/" exact element={<Home products={products} />} />
               <Route path="/products/:slug" element={<ProductDetails />} />
             </Routes>
           </Layout>

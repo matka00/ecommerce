@@ -1,6 +1,6 @@
 export default {
-  name: 'banner',
-  title: 'Banner',
+  name: 'banners',
+  title: 'Banners',
   type: 'document',
   fields: [
     {
@@ -12,9 +12,16 @@ export default {
       },
     },
     {
-      name: 'buttonText',
-      title: 'ButtonText',
+      name: 'bannerType',
+      title: 'BannerType',
       type: 'string',
+      options: {
+        list: [
+          {title: 'HeroBanner', value: 'heroBanner'},
+          {title: 'FooterBanner', value: 'footerBanner'},
+        ],
+        layout: 'radio',
+      },
     },
     {
       name: 'product',
@@ -22,8 +29,22 @@ export default {
       type: 'string',
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'product',
+        maxLength: 90,
+      },
+    },
+    {
       name: 'description',
       title: 'Description',
+      type: 'string',
+    },
+    {
+      name: 'buttonText',
+      title: 'ButtonText',
       type: 'string',
     },
     {
@@ -37,13 +58,8 @@ export default {
       type: 'string',
     },
     {
-      name: 'largeText1',
-      title: 'LargeText1',
-      type: 'string',
-    },
-    {
-      name: 'largeText2',
-      title: 'LargeText2',
+      name: 'largeText',
+      title: 'LargeText',
       type: 'string',
     },
     {

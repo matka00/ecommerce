@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 120px auto 0;
   padding: 40px;
   border-radius: 15px;
@@ -35,6 +36,7 @@
 .footer-banner-cont .footer-banner-image {
   width: 350px;
   height: 350px;
+  padding: 20px;
 }
 
 .footer-banner-cont .footer-banner-right h3 {
@@ -79,6 +81,7 @@
   .footer-banner-cont .footer-banner-image {
     align-self: center;
     margin: 20px 0;
+    padding: 0;
   }
 
   .footer-banner-cont .footer-banner-right p {

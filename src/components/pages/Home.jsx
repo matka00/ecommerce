@@ -1,14 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 
 import HeroBanner from "../HeroBanner/HeroBanner";
 import ProductCard from "../products/ProductCard";
 import FooterBanner from "../Footer/FooterBanner";
+import { client } from "../../library/client";
 
-function Home({ products, bannerProduct }) {
+function Home({ products }) {
+  const [heroProduct, setHeroProduct] = useState(null);
+  const [footerProduct, setFooterProduct] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "banners" && bannerType == "heroBanner"]{
+          bannerType,
+          product,
+          slug,
+          description,
+          buttonText,
+          smallText,
+          midText,
+          largeText,
+          discount,
+          saleTime,
+          image,
+          hexCode,
+        }`
+      )
+      .then((data) => setHeroProduct(data[0]))
+      .catch(console.error);
+  }, []);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "banners" && bannerType == "footerBanner"]{
+          bannerType,
+          product,
+          slug,
+          description,
+          buttonText,
+          smallText,
+          midText,
+          largeText,
+          discount,
+          saleTime,
+          image,
+          hexCode,
+        }`
+      )
+      .then((data) => setFooterProduct(data[0]))
+      .catch(console.error);
+  }, []);
+
+  console.log(heroProduct);
+  console.log(footerProduct);
+
   return (
     <>
-      {bannerProduct && <HeroBanner bannerProduct={bannerProduct[0]} />}
+      {heroProduct && <HeroBanner heroProduct={heroProduct} />}
+
       <div className="products-heading">
         <h2>Knitted Friends</h2>
         <p>Magic from yarn</p>
@@ -20,7 +72,8 @@ function Home({ products, bannerProduct }) {
             <ProductCard key={product.name + product.slug} product={product} />
           ))}
       </div>
-      {bannerProduct && <FooterBanner footerBanner={bannerProduct[1]} />}
+
+      {footerProduct && <FooterBanner footerProduct={footerProduct} />}
     </>
   );
 }

@@ -5,32 +5,30 @@ import { Link } from "react-router-dom";
 import { urlFor } from "../../library/client";
 import Button from "../ui/Button";
 
-function HeroBanner({ bannerProduct }) {
-  /*   console.log(bannerProduct);
-  console.log(bannerProduct.image);
- */
+function HeroBanner({ heroProduct }) {
+  
   return (
     <>
       <div className="hero-banner-cont">
         <div className="hero-sale-details">
-          <p className="small-text">{bannerProduct.smallText}</p>
-          <h3>{bannerProduct.midText}</h3>
-          <h1>{bannerProduct.largeText1}</h1>
+          <p className="small-text">{heroProduct.smallText}</p>
+          <h3>{heroProduct.midText}</h3>
+          <h1>{heroProduct.largeText}</h1>
           <img
-            src={urlFor(bannerProduct.image)}
-            alt={bannerProduct.product}
+            src={urlFor(heroProduct.image)}
+            alt={heroProduct.product}
             className="hero-banner-image"
           />
         </div>
         <div className="hero-product">
-          <Link to={`/product/${bannerProduct.product}`}>
+          <Link to={`/products/${heroProduct.slug.current}`}>
             <Button buttonStyle="dark" type="button">
-              {bannerProduct.buttonText}
+              {heroProduct.buttonText}
             </Button>
           </Link>
           <div className="desc">
-            <h5>{bannerProduct.product}</h5>
-            <p>{bannerProduct.description}</p>
+            <h5>{heroProduct.product}</h5>
+            <p>{heroProduct.description}</p>
           </div>
         </div>
       </div>
