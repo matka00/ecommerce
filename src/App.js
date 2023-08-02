@@ -6,6 +6,7 @@ import ProductDetails from "./components/products/ProductDetails";
 import { useEffect, useState } from "react";
 import { client } from "./library/client";
 import { StateContext } from "./context/StateContext";
+import Products from "./components/pages/Products";
 
 function App() {
   const [products, setProducts] = useState(null);
@@ -41,6 +42,10 @@ function App() {
             <Toaster />
             <Routes>
               <Route path="/" exact element={<Home products={products} />} />
+              <Route
+                path="/products"
+                element={<Products products={products} />}
+              />
               <Route path="/products/:slug" element={<ProductDetails />} />
             </Routes>
           </Layout>

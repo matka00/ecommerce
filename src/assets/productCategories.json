@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category": "Bunnies",
+    "link": "bunnies"
+  },
+  {
+    "id": 2,
+    "category": "Doggies",
+    "link": "doggies"
+  },
+  {
+    "id": 3,
+    "category": "Froggies",
+    "link": "froggies"
+  },
+  {
+    "id": 4,
+    "category": "Others",
+    "link": "others"
+  }
+]

@@ -15,6 +15,7 @@ function Navbar() {
         <Link to="/" className="navbar-logo">
           Handmade Shop
         </Link>
+        <Link to="/products">Products</Link>
         <button
           type="button"
           className="cart-icon"

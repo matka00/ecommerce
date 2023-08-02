@@ -2,7 +2,7 @@ import React from "react";
 import "./Layout.css";
 
 import Navbar from "../nav/Navbar";
-import Footer from "../Footer/Footer";
+import Footer from "../footer/Footer";
 
 function Layout({ children }) {
   return (

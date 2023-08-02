@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 
-import HeroBanner from "../HeroBanner/HeroBanner";
+import HeroBanner from "../heroBanner/HeroBanner";
 import ProductCard from "../products/ProductCard";
-import FooterBanner from "../Footer/FooterBanner";
+import FooterBanner from "../footer/FooterBanner";
 import { client } from "../../library/client";
 
 function Home({ products }) {
