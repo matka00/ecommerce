@@ -3,6 +3,7 @@ import "./FooterBanner.css";
 
 import { urlFor } from "../../library/client";
 import { Link } from "react-router-dom";
+import Button from "../ui/Button";
 
 function FooterBanner({ footerBanner }) {
   /*  console.log(footerBanner); */
@@ -24,7 +25,9 @@ function FooterBanner({ footerBanner }) {
           <h3>{footerBanner.midText}</h3>
           <p>{footerBanner.description}</p>
           <Link to={`/product/${footerBanner.product}`}>
-            <button type="button">{footerBanner.buttonText}</button>
+            <Button buttonStyle="light" type="button">
+              {footerBanner.buttonText}
+            </Button>
           </Link>
         </div>
       </div>

@@ -152,8 +152,16 @@
   border: none;
   background: transparent;
   font-size: 24px;
-  color: #ff6433;
-  cursor: pointer;
+}
+
+.cart-wrapper
+  .cart-cont
+  .product-cont
+  .product
+  .item-desc
+  .flex
+  .remove-item:hover {
+  transform: none;
 }
 
 .cart-wrapper .cart-cont .cart-bottom {
@@ -184,19 +192,7 @@
   max-width: 400px;
   margin-top: 10px;
   margin-top: 40px;
-  padding: 10px 12px;
-  border-radius: 15px;
-  border: none;
   font-size: 20px;
-  text-transform: uppercase;
-  background-color: #f02d34;
-  color: #fff;
-  cursor: pointer;
-  transform: scale(1, 1);
-  transition: transform 0.5s ease;
-}
-.cart-wrapper .cart-cont .cart-bottom .btn-cont button:hover {
-  transform: scale(1.1, 1.1);
 }
 
 @media (max-width: 900px) {

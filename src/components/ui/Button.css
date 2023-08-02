@@ -1,0 +1,25 @@
+.btn {
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.light {
+  border: 1px solid #ff6433;
+  background-color: #fff;
+  color: #ff6433;
+}
+
+.dark {
+  border: none;
+  background-color: #ff6433;
+  color: #fff;
+}

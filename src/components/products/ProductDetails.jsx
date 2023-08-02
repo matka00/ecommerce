@@ -11,6 +11,7 @@ import {
   AiOutlineStar,
 } from "react-icons/ai";
 import ProductCard from "./ProductCard";
+import Button from "../ui/Button";
 
 function ProductDetails() {
   /* const { slug } = useParams();
@@ -125,16 +126,16 @@ function ProductDetails() {
                 </p>
               </div>
               <div className="buttons">
-                <button
+                <Button
+                  buttonStyle="light add-to-cart"
                   type="button"
-                  className="add-to-cart"
                   onClick={() => onAdd(thisProduct, quantity)}
                 >
                   Add to Cart
-                </button>
-                <button type="button" className="buy-now">
+                </Button>
+                <Button buttonStyle="dark buy-now" type="button">
                   Buy Now
-                </button>
+                </Button>
               </div>
               <div className="other-details">
                 <h4>Details:</h4>

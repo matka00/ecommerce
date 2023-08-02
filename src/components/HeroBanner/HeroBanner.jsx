@@ -3,6 +3,7 @@ import "./HeroBanner.css";
 import { Link } from "react-router-dom";
 
 import { urlFor } from "../../library/client";
+import Button from "../ui/Button";
 
 function HeroBanner({ bannerProduct }) {
   /*   console.log(bannerProduct);
@@ -23,7 +24,9 @@ function HeroBanner({ bannerProduct }) {
         </div>
         <div className="hero-product">
           <Link to={`/product/${bannerProduct.product}`}>
-            <button type="button">{bannerProduct.buttonText}</button>
+            <Button buttonStyle="dark" type="button">
+              {bannerProduct.buttonText}
+            </Button>
           </Link>
           <div className="desc">
             <h5>{bannerProduct.product}</h5>

@@ -18,15 +18,10 @@
 .hero-banner-cont button {
   z-index: 10000 !important;
   margin-top: 40px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 15px;
-  background-color: #ff6433;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
+}
+
+.hero-banner-cont button:hover {
+  transform: none;
 }
 
 .hero-banner-cont h3 {

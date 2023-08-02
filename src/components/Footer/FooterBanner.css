@@ -49,15 +49,10 @@
 
 .footer-banner-cont .footer-banner-right button {
   margin-top: 40px;
-  padding: 10px 16px;
-  border-radius: 15px;
-  border: none;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background-color: white;
-  color: #ff6433;
-  cursor: pointer;
+}
+
+.footer-banner-cont .footer-banner-right button:hover {
+  transform: none;
 }
 
 @media (max-width: 1000px) {

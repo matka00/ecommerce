@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Cart.css";
 
 import {
@@ -8,11 +9,10 @@ import {
   AiOutlineShopping,
 } from "react-icons/ai";
 import { MdOutlineRemoveShoppingCart } from "react-icons/md";
-import { toast } from "react-hot-toast";
 
 import { useStateContext } from "../../context/StateContext";
 import { urlFor } from "../../library/client";
-import { Link } from "react-router-dom";
+import Button from "../ui/Button";
 
 function Cart() {
   const cartRef = useRef();
@@ -87,13 +87,13 @@ function Cart() {
                           </span>
                         </p>
                       </div>
-                      <button
+                      <Button
+                        buttonStyle="light remove-item"
                         type="button"
-                        className="remove-item"
                         onClick={() => onRemove(item)}
                       >
                         <MdOutlineRemoveShoppingCart />
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,9 @@ function Cart() {
                 <h3>{totalPrice} €</h3>
               </div>
               <div className="btn-cont">
-                <button type="button">Check Out</button>
+                <Button buttonStyle="dark" type="button">
+                  Check out
+                </Button>
               </div>
             </div>
           )}
