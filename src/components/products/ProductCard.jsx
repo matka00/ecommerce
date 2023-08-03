@@ -5,9 +5,25 @@ import { urlFor } from "../../library/client";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
+  let productCategory;
+
+  switch (product.species) {
+    default:
+      productCategory = "others";
+      break;
+    case "bunny":
+      productCategory = "bunnies";
+      break;
+    case "doggie":
+      productCategory = "doggies";
+      break;
+    case "froggie":
+      productCategory = "froggies";
+  }
+
   return (
     <>
-      <Link to={`/products/${product.slug.current}`}>
+      <Link to={`/products/${productCategory}/${product.slug.current}`}>
         <div className="product-card">
           <div className="product-image-cont">
             <img

@@ -5,10 +5,13 @@ import HeroBanner from "../heroBanner/HeroBanner";
 import ProductCard from "../products/ProductCard";
 import FooterBanner from "../footer/FooterBanner";
 import { client } from "../../library/client";
+import Button from "../ui/Button";
+import { Link } from "react-router-dom";
 
-function Home({ products }) {
+function Home() {
   const [heroProduct, setHeroProduct] = useState(null);
   const [footerProduct, setFooterProduct] = useState(null);
+  const [products, setProducts] = useState(null);
 
   useEffect(() => {
     client
@@ -35,6 +38,29 @@ function Home({ products }) {
   useEffect(() => {
     client
       .fetch(
+        `*[_type == "products"]{
+          name,
+          slug,
+          species,
+          price,
+          description,
+          details,
+          materials,
+          size,
+          treatment,
+          "image": image[]{
+            "url": asset->url,
+          },
+          hexCode,
+        }`
+      )
+      .then((data) => setProducts(data.slice(0, 5)))
+      .catch(console.error);
+  }, []);
+
+  useEffect(() => {
+    client
+      .fetch(
         `*[_type == "banners" && bannerType == "footerBanner"]{
           bannerType,
           product,
@@ -54,8 +80,8 @@ function Home({ products }) {
       .catch(console.error);
   }, []);
 
-  console.log(heroProduct);
-  console.log(footerProduct);
+  /* console.log(heroProduct);
+  console.log(footerProduct); */
 
   return (
     <>
@@ -71,6 +97,13 @@ function Home({ products }) {
           products.map((product) => (
             <ProductCard key={product.name + product.slug} product={product} />
           ))}
+        <div className="product-image-cont check-all-cont">
+          <Link to="/products">
+            <Button buttonStyle="light check-all-button" type="button">
+              Check all buddies
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {footerProduct && <FooterBanner footerProduct={footerProduct} />}

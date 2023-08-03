@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 
 function FooterBanner({ footerProduct }) {
-  
   return (
     <>
       <div className="footer-banner-cont">
@@ -24,7 +23,7 @@ function FooterBanner({ footerProduct }) {
           <p>{footerProduct.smallText}</p>
           <h3>{footerProduct.midText}</h3>
           <p>{footerProduct.description}</p>
-          <Link to={`/products/${footerProduct.slug.current}`}>
+          <Link to="/products">
             <Button buttonStyle="light" type="button">
               {footerProduct.buttonText}
             </Button>

@@ -6,7 +6,6 @@ import { urlFor } from "../../library/client";
 import Button from "../ui/Button";
 
 function HeroBanner({ heroProduct }) {
-  
   return (
     <>
       <div className="hero-banner-cont">
@@ -21,7 +20,7 @@ function HeroBanner({ heroProduct }) {
           />
         </div>
         <div className="hero-product">
-          <Link to={`/products/${heroProduct.slug.current}`}>
+          <Link to="/products">
             <Button buttonStyle="dark" type="button">
               {heroProduct.buttonText}
             </Button>

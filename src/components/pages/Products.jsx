@@ -2,7 +2,7 @@ import React from "react";
 import "./Products.css";
 import ProductCategories from "../productCategories/ProductCategories";
 
-function Products({ products }) {
+function Products() {
   return (
     <>
       <div className="products-heading">
