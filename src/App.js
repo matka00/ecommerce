@@ -9,6 +9,7 @@ import Bunnies from "./components/pages/Bunnies";
 import Doggies from "./components/pages/Doggies";
 import Froggies from "./components/pages/Froggies";
 import Others from "./components/pages/Others";
+import FAQs from "./components/pages/FAQs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Routes>
               <Route path="/" exact element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/faqs" element={<FAQs />} />
               <Route path="/products/bunnies/" element={<Bunnies />} />
               <Route
                 path="/products/bunnies/:slug"

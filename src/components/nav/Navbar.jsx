@@ -50,19 +50,13 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/
-            "
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
                 About Us
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/
-            "
+                to="/faqs"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

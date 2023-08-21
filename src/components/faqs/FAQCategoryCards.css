@@ -1,0 +1,14 @@
+.faq-card-cont {
+  width: 90%;
+  margin: 20px;
+  text-align: justify;
+  color: #324d67;
+}
+
+.faq-card-cont h3 {
+  padding: 10px 0;
+}
+
+.faq-card-cont .question-wrapper {
+  padding: 10px 0;
+}
