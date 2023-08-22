@@ -43,7 +43,7 @@ function Cart() {
             <div className="empty-cart">
               <AiOutlineShopping size={130} />
               <h3>Your shopping bag is empty.</h3>
-              <Link to="/">
+              <Link to="/products">
                 <button type="button" onClick={() => setShowCart(false)}>
                   Continue Shopping
                 </button>

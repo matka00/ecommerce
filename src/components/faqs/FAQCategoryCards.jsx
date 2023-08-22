@@ -8,7 +8,7 @@ import {
 import { FaChevronDown } from "react-icons/fa";
 
 function FAQCategoryCards({ questionGroupData }) {
-  console.log(questionGroupData);
+  /* console.log(questionGroupData); */
 
   return (
     <>

@@ -6,7 +6,7 @@ import { Accordion, AccordionItem } from "react-accessible-accordion";
 
 function FAQs() {
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
-  console.log(questionsAndAnswers);
+  /* console.log(questionsAndAnswers); */
 
   useEffect(() => {
     client
