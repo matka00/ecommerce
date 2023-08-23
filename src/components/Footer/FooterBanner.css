@@ -37,6 +37,11 @@
   width: 350px;
   height: 350px;
   padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.footer-banner-cont .footer-banner-image:hover {
+  transform: rotate(3deg);
 }
 
 .footer-banner-cont .footer-banner-right h3 {

@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 
 import HeroBanner from "../heroBanner/HeroBanner";
-import ProductCard from "../products/ProductCard";
 import FooterBanner from "../footer/FooterBanner";
 import { client } from "../../library/client";
 import Button from "../ui/Button";
 import { Link } from "react-router-dom";
+import HomeProductSwiper from "../products/HomeProductSwiper";
 
 function Home() {
   const [heroProduct, setHeroProduct] = useState(null);
   const [footerProduct, setFooterProduct] = useState(null);
-  const [products, setProducts] = useState(null);
 
   useEffect(() => {
     client
@@ -32,29 +31,6 @@ function Home() {
         }`
       )
       .then((data) => setHeroProduct(data[0]))
-      .catch(console.error);
-  }, []);
-
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "products"]{
-          name,
-          slug,
-          species,
-          price,
-          description,
-          details,
-          materials,
-          size,
-          treatment,
-          "image": image[]{
-            "url": asset->url,
-          },
-          hexCode,
-        }`
-      )
-      .then((data) => setProducts(data.slice(0, 5)))
       .catch(console.error);
   }, []);
 
@@ -92,14 +68,12 @@ function Home() {
         <p>Magic from yarn</p>
       </div>
 
+      <HomeProductSwiper />
+
       <div className="products-container">
-        {products &&
-          products.map((product) => (
-            <ProductCard key={product.name + product.slug} product={product} />
-          ))}
         <div className="product-image-cont check-all-cont">
           <Link to="/products">
-            <Button buttonStyle="light check-all-button" type="button">
+            <Button buttonStyle="dark check-all-button" type="button">
               Check all buddies
             </Button>
           </Link>

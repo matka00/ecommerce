@@ -1,0 +1,15 @@
+swiper-container {
+  width: 90%;
+  margin: 80px auto;
+  overflow: visible;
+}
+
+swiper-slide {
+  width: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+swiper-container a .product-card p {
+  display: none;
+}
