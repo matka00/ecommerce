@@ -2,8 +2,8 @@ import React from "react";
 import "./HeroBanner.css";
 import { Link } from "react-router-dom";
 
-import { urlFor } from "../../library/client";
-import Button from "../ui/Button";
+import { urlFor } from "../../../library/client";
+import Button from "../../ui/Button";
 
 function HeroBanner({ heroProduct }) {
   return (

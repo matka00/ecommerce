@@ -1,9 +1,9 @@
 import React from "react";
 import "./FooterBanner.css";
 
-import { urlFor } from "../../library/client";
+import { urlFor } from "../../../library/client";
 import { Link } from "react-router-dom";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 function FooterBanner({ footerProduct }) {
   return (

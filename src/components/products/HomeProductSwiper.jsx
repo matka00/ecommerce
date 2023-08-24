@@ -19,12 +19,6 @@ function HomeProductSwiper() {
               name,
               slug,
               species,
-              price,
-              description,
-              details,
-              materials,
-              size,
-              treatment,
               "image": image[]{
                 "url": asset->url,
               },
