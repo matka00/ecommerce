@@ -2,9 +2,10 @@
   padding: 0 20px 20px 20px;
 }
 
-.main-container {
+.main-cont {
   width: 100%;
   max-width: 1400px;
+  min-height: calc(100vh - 500px);
   margin: auto;
 }
 

@@ -14,7 +14,7 @@ function Layout({ children }) {
           </nav>
         </header>
         <main className="main-cont">{children}</main>
-        <footer className="footer-cont">
+        <footer>
           <Footer />
         </footer>
       </div>

@@ -18,6 +18,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .products-container .check-all-cont {

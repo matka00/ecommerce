@@ -94,7 +94,7 @@ function Home() {
         </div>
       </div>
 
-      {aboutData && <AboutSection aboutData={aboutData}/>}
+      {aboutData && <AboutSection aboutData={aboutData} />}
 
       {footerProduct && <FooterBanner footerProduct={footerProduct} />}
     </>
