@@ -3,17 +3,17 @@
   position: fixed;
   z-index: 20000;
   top: 0;
+  background-color: #fff;
 }
 
 .navbar-cont {
   height: 80px;
   position: relative;
-  z-index: 20000;
+  z-index: 200000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 18px 6px 18px;
-  background-color: #fff;
+  padding: 0px 18px 6px 18px;
 }
 
 .navbar-cont .navbar-logo {
@@ -81,6 +81,7 @@
 
 .navbar-cont .cart-icon-cont .cart-icon {
   position: relative;
+  margin-right: 6px;
   padding-top: 4px;
   border: none;
   font-size: 25px;
@@ -181,6 +182,7 @@
 @media (max-width: 450px) {
   .nav-wrapper {
     width: 100vw;
+    padding: 0 10px;
   }
 
   .navbar-cont .nav-right-wrapper .nav-menu.active {

@@ -4,6 +4,7 @@ import "./Footer.css";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { GiWool } from "react-icons/gi";
+import ScrollUp from "./ScrollUp";
 
 function Footer() {
   return (
@@ -56,6 +57,9 @@ function Footer() {
           <AiFillInstagram />
           <AiFillFacebook />
         </p>
+        <div className="up-icon">
+          <ScrollUp />
+        </div>
       </footer>
     </>
   );
