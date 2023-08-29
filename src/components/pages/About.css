@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #324d67;
+  color: #fff;
 }
 
 .about-heading h2 {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .about-heading p {
@@ -39,11 +40,12 @@
   max-width: 350px;
   text-align: center;
   margin: 0;
-  color: #ff6433;
+  color: #fecea2;
 }
 
 .about-details p {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .about-details img {

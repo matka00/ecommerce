@@ -1,9 +1,10 @@
 .nav-wrapper {
-  width: calc(100vw - 40px);
+  width: 100%;
   position: fixed;
   z-index: 20000;
   top: 0;
-  background-color: #fff;
+  padding: 0 20px;
+  background-color: #425c5a;
 }
 
 .navbar-cont {
@@ -19,7 +20,7 @@
 .navbar-cont .navbar-logo {
   font-size: 18px;
   line-height: 18px;
-  color: gray;
+  color: #fff;
 }
 
 .navbar-cont .navbar-logo svg {
@@ -33,7 +34,7 @@
 }
 
 .navbar-cont .menu-icon-cont .menu-icon .icon-no-click {
-  color: #ff6433;
+  color: #fff;
 }
 
 .navbar-cont .nav-right-wrapper {
@@ -65,7 +66,7 @@
   align-items: center;
   padding: 0rem 1rem;
   text-decoration: none;
-  color: #324d67;
+  color: #fff;
 }
 
 .navbar-cont .nav-right-wrapper .nav-menu .nav-links:hover {
@@ -74,7 +75,7 @@
 }
 
 .navbar-cont .nav-right-wrapper .nav-menu .nav-links.active {
-  color: #ff6433;
+  color: #fecea2;
 }
 
 /* Cart */
@@ -86,7 +87,7 @@
   border: none;
   font-size: 25px;
   background-color: transparent;
-  color: gray;
+  color: #fff;
   transition: transform 0.4s ease;
   cursor: pointer;
 }
@@ -104,8 +105,8 @@
   font-weight: 600;
   font-size: 12px;
   border-radius: 50%;
-  background-color: #ff6433;
-  color: #fff;
+  background-color: #fecea2;
+  color: #425c5a;
 }
 
 /* Screens */
@@ -125,7 +126,7 @@
 
   .navbar-cont .menu-icon-cont .menu-icon .icon-show {
     display: block;
-    color: #ff6433;
+    color: #fff;
     font-size: 2rem;
   }
 
@@ -150,7 +151,7 @@
   .navbar-cont .nav-right-wrapper .nav-menu.active {
     width: 100vw;
     position: absolute;
-    left: -38px;
+    left: -20px;
     z-index: 100;
     margin: 0;
     background: #242222;
@@ -168,7 +169,7 @@
   .navbar-cont .nav-right-wrapper .nav-menu .nav-links:hover {
     border-radius: 0;
     background-color: #fff;
-    color: #242424;
+    color: #425c5a;
   }
 
   .navbar-cont .nav-right-wrapper .nav-menu .nav-links.active {
@@ -181,11 +182,10 @@
 
 @media (max-width: 450px) {
   .nav-wrapper {
-    width: 100vw;
     padding: 0 10px;
   }
 
   .navbar-cont .nav-right-wrapper .nav-menu.active {
-    left: -18px;
+    left: -10px;
   }
 }

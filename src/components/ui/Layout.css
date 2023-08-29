@@ -1,17 +1,10 @@
 .layout {
   position: relative;
-  padding: 0 20px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .main-cont {
   width: 100%;
-  max-width: 1400px;
   min-height: calc(100vh - 500px);
   margin: 80px auto;
-}
-
-@media (max-width: 450px) {
-  .layout {
-    padding: 0;
-  }
 }

@@ -87,7 +87,7 @@ function Home() {
         <HomeProductSwiper />
         <div className="check-all-cont">
           <Link to="/products">
-            <Button buttonStyle="dark check-all-button" type="button">
+            <Button buttonStyle="light check-all-button" type="button">
               Check all buddies
             </Button>
           </Link>

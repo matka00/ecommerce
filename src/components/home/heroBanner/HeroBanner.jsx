@@ -13,18 +13,18 @@ function HeroBanner({ heroProduct }) {
           <p className="small-text">{heroProduct.smallText}</p>
           <h3>{heroProduct.midText}</h3>
           <h1>{heroProduct.largeText}</h1>
-          <img
-            src={urlFor(heroProduct.image)}
-            alt={heroProduct.product}
-            className="hero-banner-image"
-          />
-        </div>
-        <div className="hero-product">
           <Link to="/products">
             <Button buttonStyle="dark" type="button">
               {heroProduct.buttonText}
             </Button>
           </Link>
+        </div>
+        <div className="hero-product">
+          <img
+            src={urlFor(heroProduct.image)}
+            alt={heroProduct.product}
+            className="hero-banner-image"
+          />
           <div className="desc">
             <h5>{heroProduct.product}</h5>
             <p>{heroProduct.description}</p>

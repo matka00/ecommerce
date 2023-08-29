@@ -1,0 +1,16 @@
+.products-head {
+  text-align: center;
+  margin: 40px 0px;
+  color: #fff;
+}
+
+.products-head h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+}
+.products-head p {
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+}

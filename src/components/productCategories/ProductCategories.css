@@ -11,9 +11,9 @@
   height: 200px;
   text-align: center;
   border-radius: 15px;
-  border: 1px solid #ff6433;
-  background-color: #fff;
-  color: #ff6433;
+  border: 1px solid #a2c0bd;
+  background-color: #ebebeb;
+  color: #425c5a;
   cursor: pointer;
   overflow: hidden;
 }
@@ -26,8 +26,8 @@
 }
 
 .category-card-cont .category-card:hover {
-  background-color: #ff6433;
-  color: #fff;
+  background-color: #a2c0bd;
+  color: #fecea2;
   transform: scale(1.1, 1.1);
 }
 

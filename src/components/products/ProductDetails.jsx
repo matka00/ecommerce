@@ -74,7 +74,7 @@ function ProductDetails() {
   return (
     <>
       {thisProduct && (
-        <div>
+        <div className="product-details-wrapper">
           <div className="product-detail-cont">
             <div>
               <div className="image-cont">

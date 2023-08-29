@@ -13,13 +13,13 @@
 }
 
 .light {
-  border: 1px solid #ff6433;
-  background-color: #fff;
-  color: #ff6433;
+  border: 1px solid #a2c0bd;
+  background-color: #a2c0bd;
+  color: #fff;
 }
 
 .dark {
   border: none;
-  background-color: #ff6433;
-  color: #fff;
+  background-color: #fecea2;
+  color: #425c5a;
 }

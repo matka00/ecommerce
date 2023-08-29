@@ -1,10 +1,16 @@
 /* product container */
+
+.product-details-wrapper {
+  width: 100%;
+  margin-top: 120px;
+}
+
 .product-detail-cont {
   display: flex;
   gap: 40px;
   margin: 40px;
   margin-top: 60px;
-  color: #324d67;
+  color: #fff;
 }
 
 .product-detail-cont .image-cont img {
@@ -35,7 +41,7 @@
 }
 
 .selected-image {
-  background-color: #ff6433;
+  background-color: #a2c0bd;
 }
 
 .product-detail-desc .reviews {
@@ -43,19 +49,19 @@
   align-items: center;
   gap: 5px;
   margin: 10px 0;
-  color: #ff6433;
+  color: #fecea2;
 }
 
 .product-detail-desc .reviews p {
   margin-top: 0px;
-  color: #324d67;
+  color: #fecea2;
 }
 
 .product-detail-desc .price {
   margin-top: 30px;
   font-weight: 700;
   font-size: 26px;
-  color: #ff6433;
+  color: #fecea2;
 }
 
 .product-detail-desc .quantity {
@@ -67,7 +73,7 @@
 
 .product-detail-desc .quantity .quantity-desc {
   padding: 6px 0;
-  border: 1px solid gray;
+  border: 1px solid #a2c0bd;
 }
 
 .product-detail-desc .quantity .quantity-desc span {
@@ -79,8 +85,8 @@
 
 .product-detail-desc .quantity .quantity-desc .num {
   padding: 6px 24px;
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
+  border-right: 1px solid #a2c0bd;
+  border-left: 1px solid #a2c0bd;
   font-size: 20px;
   font-weight: 600;
 }
@@ -119,7 +125,7 @@
 .product-detail-desc .other-details mark {
   font-weight: 500;
   background-color: transparent;
-  color: #324d67;
+  color: #fecea2;
 }
 
 /* You may also like */
@@ -137,9 +143,9 @@
 
 .maylike-products-wrapper h2 {
   text-align: center;
-  margin: 50px;
+  margin: 40px 0;
   font-size: 28px;
-  color: #324d67;
+  color: #fff;
 }
 
 .maylike-products-cont {

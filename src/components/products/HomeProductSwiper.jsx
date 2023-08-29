@@ -60,53 +60,6 @@ function HomeProductSwiper() {
           ))}
         </swiper-container>
       )}
-
-      {/* {products && (
-        <swiper-container
-          loop="true"
-          slides-per-view="auto"
-          centeredSlides="true"
-          navigation="false"
-          pagination="false"
-          mousewheel="true"
-          preventClicks="true"
-          grabCursor="true"
-          spacebetween="1"
-          autoplay-delay="1"
-          speed="6000"
-          autoplay-disable-on-interaction="false"
-        >
-          {products.map((product) => (
-            <swiper-slide>
-              <ProductCard
-                key={product.name + product.slug}
-                product={product}
-              />
-            </swiper-slide>
-          ))}
-        </swiper-container>
-      )} */}
-
-      {/* {products && (
-        <Swiper
-          loop={"true"}
-          spaceBetween={50}
-          slidesPerView={2}
-          autoplay={{ delay: 2000 }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          modules={[Autoplay, Pagination, Navigation]}
-        >
-          {products.map((product) => (
-            <SwiperSlide>
-              <ProductCard
-                key={product.name + product.slug}
-                product={product}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      )} */}
     </>
   );
 }

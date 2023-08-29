@@ -1,16 +1,17 @@
 .products-heading {
   text-align: center;
-  margin: 40px 0px;
-  color: #324d67;
+  margin: 40px 0px 0px;
+  color: #fff;
 }
 .products-heading h2 {
   font-size: 40px;
   font-weight: 800;
+  color: #fff;
 }
 .products-heading p {
   font-size: 16px;
   font-weight: 200;
-  color: #324d67;
+  color: #fff;
 }
 
 .products-container {

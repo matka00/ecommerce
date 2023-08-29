@@ -31,12 +31,13 @@
 }
 
 .product-name {
-  font-weight: 500;
-  color: #324d67;
+  margin-top: 6px;
+  font-weight: 800;
+  color: #a2c0bd;
 }
 
 .product-price {
   margin-top: 6px;
-  font-weight: 800;
-  color: #324d67;
+  font-weight: 500;
+  color: #fff;
 }

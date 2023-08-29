@@ -5,7 +5,7 @@ import ProductCategories from "../productCategories/ProductCategories";
 function Products() {
   return (
     <>
-      <div className="products-heading">
+      <div className="products-head">
         <h2>Knitted Friends</h2>
         <p>Magic from yarn</p>
       </div>
