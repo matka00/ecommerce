@@ -1,3 +1,10 @@
+.nav-wrapper {
+  width: calc(100vw - 40px);
+  position: fixed;
+  z-index: 20000;
+  top: 0;
+}
+
 .navbar-cont {
   height: 80px;
   position: relative;
@@ -6,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0px 18px 6px 18px;
+  background-color: #fff;
 }
 
 .navbar-cont .navbar-logo {
@@ -171,6 +179,10 @@
 }
 
 @media (max-width: 450px) {
+  .nav-wrapper {
+    width: 100vw;
+  }
+
   .navbar-cont .nav-right-wrapper .nav-menu.active {
     left: -18px;
   }

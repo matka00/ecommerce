@@ -8,15 +8,9 @@ function Layout({ children }) {
   return (
     <>
       <div className="layout">
-        <header className="header-cont">
-          <nav>
-            <Navbar />
-          </nav>
-        </header>
+        <Navbar />
         <main className="main-cont">{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     </>
   );

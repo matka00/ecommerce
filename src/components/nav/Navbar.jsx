@@ -20,67 +20,69 @@ function Navbar() {
   console.log(click);
   return (
     <>
-      <div className="navbar-cont">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <GiWool />
-          hms
-        </Link>
-        <div className="nav-right-wrapper">
-          <div className="menu-icon-cont" onClick={handleClick}>
-            <span className="menu-icon">
-              <FiMenu className={click ? "icon-hide" : "icon-show"} />
-            </span>
-            <span className="menu-icon">
-              <IoCloseOutline className={click ? "icon-show" : "icon-hide"} />
-            </span>
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Products
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                About Us
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/faqs"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                FAQ
-              </NavLink>
-            </li>
-          </ul>
+      <div className="nav-wrapper">
+        <nav className="navbar-cont">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <GiWool />
+            hms
+          </Link>
+          <div className="nav-right-wrapper">
+            <div className="menu-icon-cont" onClick={handleClick}>
+              <span className="menu-icon">
+                <FiMenu className={click ? "icon-hide" : "icon-show"} />
+              </span>
+              <span className="menu-icon">
+                <IoCloseOutline className={click ? "icon-show" : "icon-hide"} />
+              </span>
+            </div>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/products"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/about"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/faqs"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  FAQ
+                </NavLink>
+              </li>
+            </ul>
 
-          <div className="cart-icon-cont">
-            <button
-              type="button"
-              className="cart-icon"
-              onClick={() => setShowCart(true)}
-            >
-              <AiOutlineShopping />
-              <span className="cart-item-qty">{totalQuantities}</span>
-            </button>
+            <div className="cart-icon-cont">
+              <button
+                type="button"
+                className="cart-icon"
+                onClick={() => setShowCart(true)}
+              >
+                <AiOutlineShopping />
+                <span className="cart-item-qty">{totalQuantities}</span>
+              </button>
+            </div>
           </div>
-        </div>
-        {showCart && <Cart />}
+          {showCart && <Cart />}
+        </nav>
       </div>
     </>
   );

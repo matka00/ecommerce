@@ -8,7 +8,7 @@ import { GiWool } from "react-icons/gi";
 function Footer() {
   return (
     <>
-      <div className="footer-cont">
+      <footer className="footer-cont">
         <div className="footer-links-cont">
           <div className="list-wrapper help">
             <h4>Help & Support</h4>
@@ -56,7 +56,7 @@ function Footer() {
           <AiFillInstagram />
           <AiFillFacebook />
         </p>
-      </div>
+      </footer>
     </>
   );
 }
